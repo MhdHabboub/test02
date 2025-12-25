@@ -13,7 +13,9 @@ SETTINGS = {
     "DASHBOARD_TITLE": "🌲 Portland Heritage Trees"
 }
 
-
+st.set_page_config(
+    layout="wide"
+)
 
 
 # Load data
@@ -167,4 +169,5 @@ if not df.empty:
    
 else:
     st.error("❌ Could not load data from Portland API")
+
     st.info("Please check your internet connection and try again.")
